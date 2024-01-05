@@ -11,7 +11,9 @@ import { SearchIcon } from "@heroicons/react/solid";
 import SidebarContext from "../../context/SidebarContext";
 
 const Header = () => {
-  const [isSidebarOpen, setIsSidebarOpen] =useState(true)
+  const { isSidebarOpen, setIsSidebarOpen } =
+    useContext(SidebarContext);
+
   const handleSidebarToggle = () => {
     setIsSidebarOpen(!isSidebarOpen);
     console.log(isSidebarOpen);
