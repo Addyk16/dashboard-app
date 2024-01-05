@@ -8,7 +8,7 @@ import "./Sidebar.css";
 import SidebarContext from "../../context/SidebarContext";
 
 const Sidebar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+  const { isSidebarOpen } = useContext(SidebarContext);
   return (
     <div
       className={`sidebar ${
