@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import "./App.css";
 import Bar from "./components/Bar";
 import Graph from "./components/Graph";
@@ -7,12 +8,14 @@ import QueryTable from "./components/QueryTable";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Stats from "./components/Stats/Stats";
 import WeeklySale from "./components/WeeklySale";
+import SidebarContext from "./context/SidebarContext";
 
 function App() {
+  const {isSidebarOpen} = useContext(SidebarContext)
   return (
     <main className="flex">
       <Sidebar />
-      <div className="flex flex-col flex-1 relative p-6">
+      <div className={`flex flex-col flex-1 relative p-6 ${isSidebarOpen?"lg:ml-[260px]":""} `}>
         <Header />
         <div
           className="m-3 mb-5 grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 
