@@ -43,6 +43,9 @@ function App() {
           <div className="col-span-1 md:col-span-5 md:row-span-4 sm:row-span-3 row-span-2">
             <QueryTable />
           </div>
+          <div className="col-span-1 sm:col-span-2 md:col-span-12 md:row-span-4 sm:row-span-3 row-span-2">
+            <QueryTable />
+          </div>
         </div>
       </div>
     </main>
