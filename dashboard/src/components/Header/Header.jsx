@@ -31,7 +31,7 @@ const Header = () => {
             }`}
           />
         </button>
-        <span className="header-title">
+        <span className="header-title hidden md:block">
           Hello Mad ✋
         </span>
       </div>
@@ -41,7 +41,7 @@ const Header = () => {
           placeholder="Search"
         />
       </div>
-      <div className="header-right">
+      <div className="header-right hidden lg:flex">
         <button className="btn">
           <MdOutlineFileUpload size={22} />
           New Upload
